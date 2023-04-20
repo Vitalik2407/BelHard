@@ -4,5 +4,5 @@ first = float(input('Введите первое число'))
 second = float(input('Введите второе число'))
 third = float(input('Введите третье число'))
 
-print(f'''Положительных чисел: {int(first >= 0) + int(second >= 0) + int(third >= 0)}
-Отрицательных чисел: {int(first < 0) + int(second < 0) + int(third < 0)}''')
+print(f'''Положительных чисел: {(first >= 0) + (second >= 0) + (third >= 0)}
+Отрицательных чисел: {(first < 0) + (second < 0) + (third < 0)}''')
