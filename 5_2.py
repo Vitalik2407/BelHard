@@ -1,27 +1,26 @@
 # Сделать калькулятор: у пользователя спрашивается число,
 # потом действие и второе число
 
-number_1 = input('введите первое число:')
+
 try:
-    float(number_1)
+    number_1 = float(input('введите первое число:'))
 except ValueError:
-    number_1 = input('Это не число! Введите первое число:')
+    number_1 = float(input('Это не число! Введите первое число:'))
 except TypeError:
-    number_1 = input('Неверный тип числа! Введите первое число:')
-number_1 = float(number_1)
+    number_1 = float(input('Неверный тип числа! Введите первое число:'))
+
 
 action = input('введите действие (+, -, *, /):')
 
 if action in ('+', '-', '*', '/'):
-    number_2 = input('введите второе число:')
 
     try:
-        float(number_2)
+        number_2 = float(input('Введите второе число:'))
     except ValueError:
-        number_2 = input('Это не число! Введите второе число:')
+        number_2 = float(input('Это не число! Введите второе число:'))
     except TypeError:
-        number_2 = input('Неверный тип числа! Введите второе число:')
-    number_2 = float(number_2)
+        number_2 = float(input('Неверный тип числа! Введите второе число:'))
+
     if action == '+':
         print(f'{number_1 + number_2}')
     elif action == '-':
@@ -35,15 +34,13 @@ if action in ('+', '-', '*', '/'):
             print(f'{number_1 / number_2}')
 else:
     action = input('Неверно указано действие! Введите действие (+, -, *, /):')
-    number_2 = input('введите второе число:')
-
     try:
-        float(number_2)
+        number_2 = float(input('Введите второе число:'))
     except ValueError:
-        number_2 = input('Это не число! Введите второе число:')
+        number_2 = float(input('Это не число! Введите второе число:'))
     except TypeError:
-        number_2 = input('Неверный тип числа! Введите второе число:')
-    number_2 = float(number_2)
+        number_2 = float(input('Неверный тип числа! Введите второе число:'))
+
     if action == '+':
         print(f'{number_1 + number_2}')
     elif action == '-':
