@@ -13,6 +13,6 @@ a = 0
 for i in range(2, N + b, 2):
     a += 1
     if a % 5 > 0:
-        print(i, end=', ')
+        print(i, end=' ')
     else:
-        print(i, end='\n')
+        print(i)
