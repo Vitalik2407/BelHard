@@ -7,5 +7,5 @@ M = [1, 5, 10, 25]
 M.sort(reverse=True)
 cash = int(input('Сумма к оплате ведьмаку:'))
 for i in range(len(M)):
-      print(f'Монет по {M[i]}: = {cash//int(M[i])}шт.')
-      cash = cash - (cash//int(M[i]))*int(M[i])
+    print(f'Монет по {M[i]}: = {cash // int(M[i])}шт.')
+    cash = cash - (cash // int(M[i])) * int(M[i])
