@@ -2,8 +2,10 @@
 # а так же дополнительного списка и среза
 
 def rev(a):
-    n = a[::-1]
-    return (n)
+    for i in range(len(a)):
+        a.insert(i-1, a[-1])
+        a.pop(-1)
+    print(*a)
 
 
-print(rev([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+rev([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
