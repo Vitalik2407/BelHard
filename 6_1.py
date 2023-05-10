@@ -6,8 +6,9 @@ def perevod(number_1):
     while number_1 > 0:
         b = str(number_1 % 2)
         a = b + a
-        number_1 = number_1//2
+        number_1 //= 2
     print(a)
+
     num = 1
     for i in range(len(a)-1):
         num = num * 2 + int(a[i+1])
