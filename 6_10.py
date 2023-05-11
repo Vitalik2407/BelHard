@@ -7,14 +7,12 @@ e = int(input('end='))
 
 
 def step(number, start, end):
-    while start <= end:
-        a = number**start
-        start += 1
-        yield a
+    for i in range(start, end+1, 1):
+        yield number**i
 
 
 b = step(n, s, e)
 result = []
-for i in range(e - s + 1):
+for i in range(s, e+1, 1):
     result.append(next(b))
 print(result)
